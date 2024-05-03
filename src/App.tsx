@@ -1,7 +1,8 @@
 import './App.css'
 import './index.css'
-import Navigation from './components/Navigation'
-import Header from './components/Header'
+import Navigation from './sections/Navigation'
+import Header from './sections/Header'
+import Portfolio from './sections/Portfolio'
 
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
     <>
       <Navigation />
       <Header />
+      <Portfolio />
   </>
   )
 }
