@@ -4,7 +4,7 @@ function Header() {
   return (
     <header>
         <div className='header-wrapper'>
-               <h1> I build web and mobile experiences to empower organizations who desire to leave a positive mark on society.</h1>
+            <p className='header-message'>I create web and mobile experiences that empower organizations to harness the digital space for the greater good.</p>
         </div>
     </header>
   )
