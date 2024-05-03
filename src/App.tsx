@@ -1,12 +1,10 @@
-import './App.css'
+import Navigation from './components/Navigation'
 
 function App() {
 
   return (
     <>
-    <div>
-      <p>My Porftolio</p>
-    </div>
+    <Navigation />
     </>
   )
 }
