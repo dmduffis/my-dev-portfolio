@@ -1,5 +1,6 @@
 import React from 'react'
 import './navigation.style.css'
+import '../assets/fonts/fonts.css'
 
 function Navigation() {
   return (
