@@ -1,0 +1,55 @@
+.project-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 75px;
+}
+
+.project-image {
+    background-image: url('/src/assets/images/project_jaque_01.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 375px;
+    border-radius: 20px;
+}
+
+.project-title {
+    font-family: 'Inter', sans-serif;
+    line-height: 5px;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.tags{
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: gray;
+}
+
+.btn-project {
+    font-family: "Inter", sans-serif;
+    padding: 13px;
+    background-color: black;
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 2px;
+    color: white;
+    width: fit-content;
+    transition: 0.2s ease-in-out all;
+}
+
+.btn-project:hover {
+    font-family: "Inter", sans-serif;
+    padding: 13px;
+    background-color: white;
+    border-radius: 30px;
+    color: black;
+    width: fit-content;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    transition: 0.2s ease-in-out all;
+}
