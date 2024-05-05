@@ -10,10 +10,11 @@ h1 {
     font-weight: 400;
     text-align: left;
     padding-bottom: 50px;
-    transition: 0.7s ease-in-out all;
+    transition: 0.3s ease-in-out all;
 }
 
 h1:hover {
     color: goldenrod;
+    transition: 0.2s ease-in-out all;
 }
 

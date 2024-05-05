@@ -1,21 +1,18 @@
+import { ProjectProps } from '../types/ProjectTypes';
 import './project.style.css'
 
-function Project() {
+
+const Project = ({title, coverImg, description, url}: ProjectProps) => {
   return (
     <div className="project-wrapper">
-        <div className="project-image">
-
-        </div>
+        <img className='project-image' src={coverImg} />
 
         <div className="project-info">
-        <p className='project-title'>Jaqueline Lima</p>
-        <p className='tags'>A responsive, portfolio website for upcoming Brazilian architect.</p>
-        <p className='btn-project'>View Live Demo</p>
-
+        <p className='project-title'>{title}</p>
+        <p className='description'>{description}</p>
+        <a href={url}><button className='btn-project'>View Live Demo</button></a>
         </div>
-
     </div>
-    
   )
 }
 
