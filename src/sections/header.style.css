@@ -1,6 +1,7 @@
 .header-wrapper {
     flex-wrap: wrap;
     justify-content: left;
+    margin-top: 0 !important;
 }
 
 h1 {
