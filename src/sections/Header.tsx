@@ -2,9 +2,10 @@ import './header.style.css'
 
 function Header() {
   return (
-    <header>
-        <div className='header-wrapper'>
-               <h1> I build web and mobile experiences to empower organizations desiring to leave a positive impact on society.</h1>
+    <header className='text-gray-100'>
+        <div>
+               <h1 className='m-2 text-center'>Coding with Conscience</h1>
+               <h2 className='m-2 text-center'>I craft web and mobile experiences for good</h2>
         </div>
     </header>
   )
