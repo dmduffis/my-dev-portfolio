@@ -1,0 +1,85 @@
+.section-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 34px; 
+    font-weight: 200;
+}
+
+.project {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.project-wrapper {
+    margin-bottom: 1em;
+    transition: 0.3s ease-in-out all;
+    border: 1px solid lightgray;
+    border-radius: 30px;
+    padding: 10px;
+    flex: 1 1 45%;
+    min-width: 400px;
+
+}
+
+
+.project-wrapper:hover {
+    box-shadow: rgb(15, 15, 15);
+    transition: 0.3s ease-in-out all;
+    transform: scale(1.02);
+}
+
+.project-image {
+    transition: 0.3s ease-in-out all;
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+}
+
+
+.project-info {
+    padding: 20px;
+}
+
+.project-title {
+    font-family: 'Inter', sans-serif;
+    line-height: 5px;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.description{
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: gray;
+}
+
+.btn-project {
+    margin-top: 1em;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    padding: 13px;
+    background-color: black;
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    color: white;
+    width: fit-content;
+    transition: 0.2s ease-in-out all;
+    text-decoration: none;
+}
+
+.btn-project:hover {
+    margin-top: 1em;
+    font-size: 15px;
+    font-family: "Inter", sans-serif;
+    padding: 13px;
+    background-color: white;
+    border-radius: 30px;
+    color: black;
+    width: fit-content;
+    border: 1px solid lightgray;
+    transition: 0.2s ease-in-out all;
+    text-decoration: none;
+}
