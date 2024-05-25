@@ -1,5 +1,4 @@
 import './navigation.style.css'
-import logo from '../assets/images/lgo_square_white.png'
 
 function Navigation() {
   return (
