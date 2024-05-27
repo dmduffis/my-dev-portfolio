@@ -3,6 +3,7 @@ import './index.css'
 import Navigation from './sections/Navigation'
 import Header from './sections/Header'
 import Portfolio from './sections/Portfolio'
+import AboutMe from './sections/AboutMe'
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Navigation />
       <Header />
       <Portfolio />
+      <AboutMe />
   </>
   )
 }
