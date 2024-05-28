@@ -1,4 +1,5 @@
 import './navigation.style.css'
+import downloadIcon from '../assets/images/download_icon.png';
 
 function Navigation() {
   return (
@@ -6,10 +7,14 @@ function Navigation() {
         <div id="max" className='flex justify-between items-center w-full px-10'>
               <div className='site-title'>Daniel Duffis</div>
               <div className='navigation-links max-md:hidden'>
-                  <ul>
+                  <ul className='flex items-center'>
                       <li>About</li>
                       <li>Contact</li>
-                      <li>Resume</li>
+                      <li>
+                        <button className="flex items-center mx-2 py-2 px-4 rounded-full text-white  bg-gradient-to-r from-purple-600 to-blue-600 hover:shadow-xl transition-all ease-in ease-out">
+                        <span className="mx-2">Resume</span> <img src={downloadIcon} width={18} height={18} />
+                      </button>
+                    </li>
                   </ul>
               </div>
               <div className='md:hidden'>
