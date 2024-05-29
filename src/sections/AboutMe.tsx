@@ -14,7 +14,7 @@ function AboutMe() {
         <h1></h1>
           <div className='section-wrapper sm:w-full lg:w-7/12 '>
         <div className='w-full p-10 bg-gray-900 rounded-3xl'>
-          <h1 className='section-title text-left text-white'>Jr. Front-End Developer</h1>
+          <h2 className='section-title text-left text-white'>Jr. Front-End Developer</h2>
           <h3 className='mt-1 text-lg text-left text-gray-400'>I bring over a decade of graphic design experience and expertise into the realm of software engineering. My proficiency lies in front-end development, complemented by a foundational understanding of back-end technologies.</h3>
         
         {/* List of Skills */}
