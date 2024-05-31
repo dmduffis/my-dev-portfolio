@@ -4,6 +4,8 @@ nav {
     justify-content: space-between;
     padding-top: 40px;
     padding-bottom: 40px;
+    backdrop-filter: blur(175px);
+    -webkit-backdrop-filter: blur(175px);
 }
 
 .site-title {

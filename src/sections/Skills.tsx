@@ -12,7 +12,7 @@ function Skills() {
   return (
         <div className='mt-16 max-md:w-full lg:w-1/2'>
           <div className='section-wrapper h-full'>
-        <div className='p-10 bg-gray-900 rounded-3xl mr-4 h-full'>
+        <div className='p-10 bg-gray-900 rounded-3xl lg:mr-4 h-full'>
           <h2 className='section-title text-left text-white'>Jr. Front-End Developer</h2>
           <h3 className='mt-2 text-lg text-left text-gray-400'>I bring over a decade of graphic design experience and expertise into the realm of software engineering. My proficiency lies in front-end development, complemented by a foundational understanding of back-end technologies.</h3>
         

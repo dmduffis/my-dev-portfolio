@@ -5,7 +5,7 @@ function Experience() {
   return (
         <div className='mt-16 w-full lg:w-1/2'>
           <div className='section-wrapper h-full w-full'>
-        <div className='p-10 bg-gray-900 rounded-3xl ml-4 h-full'>
+        <div className='p-10 bg-gray-900 rounded-3xl lg:ml-4 h-full'>
           <h2 className='section-title text-left text-white'>Experience</h2>
         
         {/* List of experiencies */}

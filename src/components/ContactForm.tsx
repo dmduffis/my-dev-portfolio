@@ -31,7 +31,7 @@ const form = useRef();
         <input type="text" label="name" placeholder='Name' name='user_name' />
         <input type="email" label="email" placeholder='Email' name='user_email'/>
         <textarea label="message" placeholder='Message' name="message"></textarea>
-        <input className='items-center' type="submit" value="Send →"/>
+        <input className='items-center' type="submit" value="Submit →"/>
     </form>
 </div>
   )
