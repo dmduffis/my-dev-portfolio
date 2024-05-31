@@ -3,7 +3,7 @@ import myicon from '../assets/images/my_icon.png'
 
 function Header() {
   return (
-    <header className='mt-48 text-gray-100'>
+    <header className='mt-44 text-gray-100'>
         <div>
                <div className='flex flex-wrap-reverse max-md:gap-4 md:gap-6 justify-center items-center'>
                 <h1 className='text-center'>Hi, I'm Daniel</h1>

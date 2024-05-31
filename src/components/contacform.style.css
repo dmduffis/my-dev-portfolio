@@ -1,0 +1,107 @@
+.contact_form_wrapper {
+    max-width: 500px;
+    align-self: center;
+  }
+
+
+  .contact_form input[type=text]:focus, .contact_form input[type=email]:focus, .contact_form textarea:focus {
+    outline: rgb(122, 34, 185) solid 1px;
+  }
+  
+  
+  .contact_form input[type=text] {
+    height: 60px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 999px;
+    background-color:#1e1e1e;
+    color: #fff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: sans-serif;
+    font-size: 16px;
+    text-indent: 10px;
+  }
+  
+  .contact_form input[type=text]::placeholder {
+    color:dimgray;
+    font-family: sans-serif;
+    font-size: 16px;
+    text-indent: 10px;
+  }
+  
+  .contact_form input[type=email] {
+    height: 60px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 999px;
+    background-color:#1e1e1e;
+    color: #fff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: sans-serif;
+    font-size: 16px;
+    text-indent: 10px;
+  }
+  
+  .contact_form input[type=email]::placeholder {
+    color:dimgray;
+    font-family: sans-serif;
+    font-size: 16px;
+    text-indent: 10px;
+  }
+  
+  .contact_form textarea {
+    height: 150px;
+    width: 100%;
+    margin-bottom: 10px;
+    resize: none;
+    border: none;
+    background-color:#1e1e1e;
+    color: #fff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: sans-serif;
+    font-size: 16px;
+    text-indent: 10px;
+    border-radius: 30px;
+  }
+  
+  .contact_form textarea::placeholder {
+    color:dimgray;
+    font-family: sans-serif;
+    font-size: 16px;
+    text-indent: 10px;
+  }
+  
+  .contact_form input[type=submit] {
+    appearance: none;
+    border: 1px solid dimgray;
+    border-radius: 50px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Syne" sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+    min-width: 0;
+    width: 35%;
+    outline: none;
+    margin-top: 20px;
+    padding: 11px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .contact_form input[type=submit]:hover {
+    background-color:  rgb(122, 34, 185);
+    border: rgb(122, 34, 185) solid 1px;
+    color:beige;
+    transition: all 0.2s ease-in-out;
+  }

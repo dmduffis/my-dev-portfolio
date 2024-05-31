@@ -4,6 +4,7 @@ import Navigation from './sections/Navigation'
 import Header from './sections/Header'
 import Portfolio from './sections/Portfolio'
 import About from './sections/About'
+import Contact from './sections/Contact'
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
       <Header />
       <Portfolio />
       <About />
+      <Contact />
   </>
   )
 }

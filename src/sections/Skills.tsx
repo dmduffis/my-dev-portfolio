@@ -10,7 +10,7 @@ import hygraph from '../assets/images/hygraph-icon.png'
 
 function Skills() {
   return (
-        <div className='mt-10 max-md:w-full lg:w-1/2'>
+        <div className='mt-16 max-md:w-full lg:w-1/2'>
           <div className='section-wrapper h-full'>
         <div className='p-10 bg-gray-900 rounded-3xl mr-4 h-full'>
           <h2 className='section-title text-left text-white'>Jr. Front-End Developer</h2>

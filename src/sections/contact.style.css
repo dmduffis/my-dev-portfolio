@@ -1,0 +1,12 @@
+.contact-image {
+    background-image: url('../assets/images/hire_me_portrait.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: 45px;
+    font-weight: 400;
+}
