@@ -1,9 +1,35 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+// import pages 
+import App from './App'
+import Overview from './Overview'
+
+// import Router to link pages
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+
+
+// define routes for linked pages
+const router = createBrowserRouter([
+  {
+    path: "/overview/:projectId",
+    element: <Overview />
+  },
+  {
+    path: "/",
+    element: <App />
+  },
+  {
+    path: "home",
+    element: <App />
+  },
+]);
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+    <RouterProvider router={router} />
+  </React.StrictMode>
 )

@@ -1,4 +1,6 @@
-export default function Project({title, coverImg, description, url}) {
+import { Link } from 'react-router-dom';
+
+export default function Project({title, coverImg, description, projectId}) {
   return (
   
 // Project Wrapper
@@ -21,10 +23,10 @@ export default function Project({title, coverImg, description, url}) {
           </svg>
       </button>
 
-      <button className="flex items-center mx-2 py-2 px-4 rounded-full text-white  bg-gradient-to-r from-purple-600 to-blue-600 hover:shadow-xl transition-all ease-in ease-out">
+      <Link to={`/overview/${projectId}`} className="flex items-center mx-2 py-2 px-4 rounded-full text-white  bg-gradient-to-r from-purple-600 to-blue-600 hover:shadow-xl transition-all ease-in ease-out">
         <span className="mx-2">Overview</span>
         <svg fill="none" height="15" width="15" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="m0 0h48v48h-48z" fill="#fff" fill-opacity=".01"/><g stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><path d="m41.9999 24h-35.99998"/><path d="m30 12 12 12-12 12"/></g></svg>
-      </button>
+      </Link>
       
         </div>
       </div>

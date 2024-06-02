@@ -8,7 +8,7 @@ function Portfolio() {
   console.log(data)
 
   return (
-    <div className='bg-white rounded-3xl p-2 mt-20'>
+    <div id='projects' className='bg-white rounded-3xl p-2 mt-20'>
       <div className='section-wrapper'>
         <div className="flex flex-wrap">
         {data.map((item: ProjectProps) => {
@@ -17,8 +17,8 @@ function Portfolio() {
             title={item.title}
             coverImg={item.coverImg}
             description={item.description}
-            url={item.url}
             key={item.key}
+            projectId={item.projectId}
             />
           )})
         }

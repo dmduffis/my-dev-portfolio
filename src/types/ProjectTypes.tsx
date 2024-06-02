@@ -4,7 +4,8 @@ export interface Project {
     coverImg: string;
     description: string;
     url: string;
-    key: number;
+    key: string;
+    projectId: number;
   }
 
   export interface ProjectProps {
@@ -12,5 +13,6 @@ export interface Project {
     coverImg: string;
     description: string;
     url: string;
-    key: number;
+    key: string;
+    projectId: number;
   }

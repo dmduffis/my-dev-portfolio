@@ -7,6 +7,7 @@ export const data = [
       description: 'A responsive, portfolio website for upcoming Brazilian architect.',
       url: 'https://jaquearquiteta.netlify.app',
       key: nanoid(),
+      projectId: 1,
     },
     {
       title: 'Academic Journal eReader',
@@ -14,6 +15,7 @@ export const data = [
       description: 'A responsive, portfolio website for upcoming Brazilian architect.',
       url: 'https://jaquearquiteta.netlify.app',
       key: nanoid(),
+      projectId: 2,
     },
     {
       title: 'Project 3',
@@ -21,6 +23,7 @@ export const data = [
       description: 'A responsive, portfolio website for upcoming Brazilian architect.',
       url: 'https://jaquearquiteta.netlify.app',
       key: nanoid(),
+      projectId: 3,
     },
     {
       title: 'Project 4',
@@ -28,6 +31,7 @@ export const data = [
       description: 'A responsive, portfolio website for upcoming Brazilian architect.',
       url: 'https://jaquearquiteta.netlify.app',
       key: nanoid(),
+      projectId: 4,
     }
   ]
 
