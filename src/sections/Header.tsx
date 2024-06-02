@@ -1,5 +1,4 @@
 import './header.style.css'
-import myicon from '../assets/images/my_icon.png'
 
 function Header() {
   return (

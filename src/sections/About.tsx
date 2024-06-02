@@ -3,9 +3,9 @@ import Experience from './Experience'
 
 function About() {
   return (
-    <div className='flex flex-wrap justify-between'>
-    <Skills />
-    <Experience />
+    <div id='skills' className='flex flex-wrap justify-between'>
+      <Skills />
+      <Experience />
     </div>
   )
 }

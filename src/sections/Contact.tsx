@@ -4,7 +4,7 @@ import ContactForm from '../components/ContactForm'
 
 function Contact() {
   return (
-    <div className='flex flex-col my-16 justify-center'>
+    <div id='contact' className='flex flex-col my-16 justify-center'>
     <div className="flex flex-col justify-center items-center">
         <div className="w-48 h-48 rounded-full p-2">
             <img src={contactImage} />
