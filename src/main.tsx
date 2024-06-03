@@ -15,7 +15,7 @@ import {
 // define routes for linked pages
 const router = createBrowserRouter([
   {
-    path: "/overview/:projectId",
+    path: "/overview/:index",
     element: <Overview />
   },
   {

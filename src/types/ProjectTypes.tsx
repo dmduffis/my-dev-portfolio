@@ -5,7 +5,7 @@ export interface Project {
     description: string;
     url: string;
     key: string;
-    projectId: number;
+    index:number;
   }
 
   export interface ProjectProps {
@@ -14,5 +14,5 @@ export interface Project {
     description: string;
     url: string;
     key: string;
-    projectId: number;
+    index: number;
   }

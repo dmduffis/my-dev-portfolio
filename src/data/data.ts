@@ -2,12 +2,17 @@ import { nanoid } from "nanoid"
 
 export const data = [
     {
-      title: 'Mobile eCommerce',
+      title: 'eCommerce Perfume Mobile App for Latina Women',
       coverImg: 'https://res.cloudinary.com/dbob6dlo0/image/upload/v1716593880/Portfolio/def3akiirxtm200g9ru7.png',
       description: 'A responsive, portfolio website for upcoming Brazilian architect.',
       url: 'https://jaquearquiteta.netlify.app',
       key: nanoid(),
       projectId: 1,
+      animation: 'https://res.cloudinary.com/dbob6dlo0/image/upload/v1717361681/Portfolio/sk6pha9bh8jgcnoq0w01.gif',
+      objective: `Design a cross-platform eCommerce perfume application catering to Latina women in Caribbean Latin America, aged 25-45, targeting the Android platform due to its prevalence in the region.`,
+      define: `The identification of pain points revealed a significant absence: a lack of a culturally sensitive eCommerce perfume application for Latina women. This demographic faced challenges in finding a platform that resonated with their cultural identity and provided a personalized shopping experience. Consequently, the project requirements emphasized the development of a visually appealing app tailored that recognized the diverse cultural nuances prevalent within Caribbean Latin America. The choice of a cross-platform app acknowledge the use of Android as the primary platform in the region.`,
+      design: `Visual representation focused on using images resonant with Latina women and incorporating elements reflecting the warmth and vibrancy of Caribbean culture. Spanish served as the primary language for navigation. The color scheme evoked the essence of the Caribbean, with vibrant hues and warm tones. Cultural elements specific to the Caribbean, like local patterns and symbols, were integrated into the design.`,
+      deliver: `The technology stack included React Native for cross-platform development, ensuring compatibility with both Android and iOS. Stripe was integrated for secure payment processing, while WhatsApp integration facilitated communication, aligning with its widespread usage in Latin America for personal and business purposes.`
     },
     {
       title: 'Academic Journal eReader',
@@ -16,9 +21,13 @@ export const data = [
       url: 'https://jaquearquiteta.netlify.app',
       key: nanoid(),
       projectId: 2,
+      animation: 'https://res.cloudinary.com/dbob6dlo0/image/upload/v1717361681/Portfolio/sk6pha9bh8jgcnoq0w01.gif',
+      objective: 'Develop a mobile application to complement the website of an academic journal, providing access to a collection of issues.',
+      define: `At the beginning of the exploration phase, several pain points were identified by listening to the experiences of the users (college students, professors), including limited accessibility due to the journal being available only in PDF format, a lack of robust search functionality on the website, challenges in navigating the website on mobile devices, particularly for older users, and the absence of a notification system for new journal availability.`,
+      design: `The project aimed to create a mobile cross-platform application using React Native, catering to both younger and older demographics. Articles were formatted for easy reading on devices, with configurable settings to accommodate older users transitioning to digital platforms. While maintaining PDF access for research purposes, the app addressed various accessibility challenges. The design focused on customizable reading experiences, offering features like adjustable font sizes and dark/light mode themes. Additionally, users could bookmark articles, follow authors, and receive notifications for new publications.`,
+      deliver: `Technologies employed included React Native, Hygraph (GraphQL), and Node.js. The app delivered a solution to accessibility and usability concerns on the academic journal's website. Through customizable features, bookmarking options, and notification systems, it aimed to improve user experience and engagement with scholarly content.`
     },
-    {
-      title: 'Project 3',
+    { title: 'Project 3',
       coverImg: 'https://res.cloudinary.com/dbob6dlo0/image/upload/v1716596350/portfolio_jaque_covers_ueauhj.png',
       description: 'A responsive, portfolio website for upcoming Brazilian architect.',
       url: 'https://jaquearquiteta.netlify.app',

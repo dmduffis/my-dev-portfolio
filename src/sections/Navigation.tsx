@@ -6,10 +6,17 @@ import downloadIcon from '../assets/images/download_icon.png';
 
 function Navigation() {
   return (
-    <div className='top-0 left-0 right-0 fixed backdrop-blur-lg'>
+    <div className='top-0 left-0 right-0 fixed backdrop-blur-2xl'>
     <nav className='flex justify-center gap-20 bg-gray-950 text-gray-100 border-b border-gray-800 opacity-90'>
         <div id="max" className='flex justify-between items-center w-full px-10'>
-              <Link to='/' className='site-title hover:text-purple-400'>Daniel Duffis</Link>
+              <Link to='/' className='site-title hover:text-purple-400'>
+                <button onClick={() => window.scrollTo({
+                  top: 0,
+                  left: 0,
+                  behavior: "smooth"
+                  })}>Daniel Duffis
+                </button>
+             </Link>
               <div className='navigation-links max-md:hidden'>
                   <ul className='flex items-center'>
                   <Anchor

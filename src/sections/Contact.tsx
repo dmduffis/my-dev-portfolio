@@ -10,7 +10,7 @@ function Contact() {
             <img src={contactImage} />
         </div>
     <h1 className='mt-4 text-gray-100'>Hire Me</h1>
-    <h3 className='text-2xl text-gray-400'>Let's collaborate on your next project</h3>
+    <h3 className='text-xl text-gray-400 justify-center text-center'>Let's collaborate on your next project</h3>
     </div>
         <ContactForm />
     </div>
