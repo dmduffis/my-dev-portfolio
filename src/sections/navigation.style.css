@@ -1,3 +1,7 @@
+.nav-back {
+    z-index: 999;
+}
+
 nav {
     display: flex;
     align-items: center;
@@ -24,6 +28,7 @@ nav {
     font-size: 18px;
     font-weight: 300;
 }
+
 
 #max {
     width: 1280px;

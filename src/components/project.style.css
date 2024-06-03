@@ -1,0 +1,16 @@
+.project-btn:hover {
+    fill: #c026d3;
+}
+
+.arrow {
+    position: absolute;
+    margin-left: 74px;
+    transition: ease-in all 0.1s;
+    z-index: 1;
+}
+
+.project-btn:hover .arrow {
+    position: absolute;
+    margin-left: 78px;
+    transition: ease-in all 0.1s;
+}
