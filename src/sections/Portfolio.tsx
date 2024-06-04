@@ -15,6 +15,7 @@ function Portfolio() {
           <Project
             title={item.title}
             coverImg={item.coverImg}
+            git={item.git}
             description={item.description}
             key={item.key}
             index={index}

@@ -3,7 +3,7 @@ export interface Project {
     title: string;
     coverImg: string;
     description: string;
-    url: string;
+    git: string;
     key: string;
     index:number;
   }
@@ -12,7 +12,7 @@ export interface Project {
     title: string;
     coverImg: string;
     description: string;
-    url: string;
+    git: string;
     key: string;
     index: number;
   }

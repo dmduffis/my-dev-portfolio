@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom'
-import Navigation from './sections/Navigation'
 import { data } from './data/data'
 import { useEffect } from 'react';
+import NavigationSingle from './sections/NavigationSingle';
 
 
 function Overview() {
@@ -20,7 +20,7 @@ useEffect(() => window.scrollTo({
 
   return (
     <>
-    <Navigation />
+    <NavigationSingle />
     <div className='w-2/3 mt-48'>
       <h3 className='text-2xl text-purple-300'>Case Study</h3>
       <h1 className='mt-4 text-6xl text-gray-100 font-light'>{item.title}</h1>

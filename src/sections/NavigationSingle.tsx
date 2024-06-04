@@ -2,21 +2,8 @@ import './navigation.style.css'
 import { Link } from 'react-router-dom';
 import { Link as Anchor, animateScroll as scroll } from "react-scroll";
 import downloadIcon from '../assets/images/download_icon.png';
-import { useEffect } from 'react';
 
-
-function Navigation() {
-
-  useEffect(()=> {
-    if (location.hash) {
-        let elem = document.getElementById(location.hash.slice(1))
-        if (elem) {
-            elem.scrollIntoView({behavior: "smooth"})
-        }
-    } else {
-    window.scrollTo({top:0, left:0, behavior: "smooth"})
-    }
-}, [location])
+function NavigationSingle() {
 
   return (
     <div className='nav-back top-0 left-0 right-0 fixed backdrop-blur-2xl'>
@@ -32,32 +19,15 @@ function Navigation() {
              </Link>
               <div className='navigation-links max-md:hidden'>
                   <ul className='flex items-center'>
-                  <Anchor
-                      activeClass="text-purple-400"
-                      to="projects"
-                      spy={true}
-                      smooth={true}
-                      offset={-150}
-                      duration={700}> 
-                  Projects
-                  </Anchor>
-                  <Anchor
-                      activeClass="text-purple-400"
-                      to="skills"
-                      spy={true}
-                      smooth={true}
-                      offset={-100}
-                      duration={700}> 
-                  Skills
-                  </Anchor>
-                  <Anchor
-                      activeClass="text-purple-400"
-                      to="contact"
-                      spy={true}
-                      smooth={true}
-                      duration={700}> 
-                  Contact
-                  </Anchor>
+                  <Link to='/#projects' className='hover:text-purple-400'>
+                    Projects
+                  </Link>
+                  <Link to='/#skills' className='hover:text-purple-400'>
+                    Skills
+                  </Link>
+                  <Link to='/#contact' className='hover:text-purple-400'>
+                    Contact
+                  </Link>
                     <li>
                           <button className="flex items-center mx-2 py-2 px-4 rounded-full text-white  bg-gradient-to-r from-purple-600 to-blue-600 hover:shadow-xl transition-all ease-in ease-out">
                           <span className="mx-2">Resume</span> <img src={downloadIcon} width={18} height={18} />
@@ -74,4 +44,4 @@ function Navigation() {
   )
 }
 
-export default Navigation
+export default NavigationSingle
