@@ -11,7 +11,7 @@ function Navigation() {
     if (location.hash) {
         let elem = document.getElementById(location.hash.slice(1))
         if (elem) {
-            elem.scrollIntoView({behavior: "smooth"})
+            elem.scrollIntoView({block: "start", behavior: "smooth", offset: 10})
         }
     } else {
     window.scrollTo({top:0, left:0, behavior: "smooth"})
@@ -33,6 +33,7 @@ function Navigation() {
               <div className='navigation-links max-md:hidden'>
                   <ul className='flex items-center'>
                   <Anchor
+                      className='hover:text-purple-400'
                       activeClass="text-purple-400"
                       to="projects"
                       spy={true}
@@ -42,6 +43,7 @@ function Navigation() {
                   Projects
                   </Anchor>
                   <Anchor
+                      className='hover:text-purple-400'
                       activeClass="text-purple-400"
                       to="skills"
                       spy={true}
@@ -51,6 +53,7 @@ function Navigation() {
                   Skills
                   </Anchor>
                   <Anchor
+                      className='hover:text-purple-400'
                       activeClass="text-purple-400"
                       to="contact"
                       spy={true}
