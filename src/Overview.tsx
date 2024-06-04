@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom'
 import Navigation from './sections/Navigation'
 import { data } from './data/data'
+import { useEffect } from 'react';
 
 
 function Overview() {
@@ -11,6 +12,12 @@ let { index } = params;
 
 let item = data[index]
 
+useEffect(() => window.scrollTo({
+  top: 0,
+  left: 0,
+  behavior: "smooth"
+  }))
+
   return (
     <>
     <Navigation />
@@ -19,7 +26,9 @@ let item = data[index]
       <h1 className='mt-4 text-6xl text-gray-100 font-light'>{item.title}</h1>
     </div>
     <div>
-    <img src={item.animation} className='mt-16 rounded-3xl' width={1440} height={700} />
+      <video className='mt-16 rounded-3xl' autoPlay loop muted>
+        <source src={item.animation} type='video/mp4' width={1440} height={700} />
+      </video>
     </div>
     <div>
       <h1 className='mt-16 text-4xl text-gray-100 font-light'><span className='text-purple-300'>Objective:</span> {item.objective}</h1>
@@ -35,6 +44,16 @@ let item = data[index]
       </div>
     </div>
 
+    <div className='max-lg:mt-4 flex flex-wrap text-gray-100'>
+      <div className='flex flex-col justify-center items-left lg:w-1/3'>
+      <p className='lg:m-2 text-left text-3xl font-base text-purple-300'></p>
+        <p className='lg:m-2 text-5xl font-thin'></p>
+      </div>
+      <div className='mt-4 lg:w-2/3'>
+        <img src={item.album[0]} />
+      </div>
+    </div>
+
     <div className='max-lg:mt-12 flex flex-wrap text-gray-100'>
       <div className='flex flex-col justify-center items-left lg:w-1/3'>
       <p className='lg:m-2 text-left text-3xl font-base text-purple-300'>02</p>
@@ -42,6 +61,16 @@ let item = data[index]
       </div>
       <div className='mt-8 lg:w-2/3'>
         <p className='lg:m-8 text-lg leading-8 text-gray-400'>{item.design}</p>
+      </div>
+    </div>
+
+    <div className='max-lg:mt-4 flex flex-wrap text-gray-100'>
+      <div className='flex flex-col justify-center items-left lg:w-1/3'>
+      <p className='lg:m-2 text-left text-3xl font-base text-purple-300'></p>
+        <p className='lg:m-2 text-5xl font-thin'></p>
+      </div>
+      <div className='mt-4 lg:w-2/3'>
+        <img src={item.album[1]} />
       </div>
     </div>
 

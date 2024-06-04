@@ -2,9 +2,17 @@ import './navigation.style.css'
 import { Link } from 'react-router-dom';
 import { Link as Anchor, animateScroll as scroll } from "react-scroll";
 import downloadIcon from '../assets/images/download_icon.png';
+import { useEffect } from 'react';
 
 
 function Navigation() {
+
+  useEffect(() => window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth"
+    }))
+
   return (
     <div className='nav-back top-0 left-0 right-0 fixed backdrop-blur-2xl'>
     <nav className='flex justify-center gap-20 bg-gray-950 text-gray-100 border-b border-gray-800 opacity-90'>
