@@ -32,7 +32,7 @@ const [open, setOpen] = useState(false);
                   })}>Daniel Duffis
                 </button>
              </Link>
-              <div id={open? 'open' : 'hidden'} className='navigation-links max-md:mt-6'>
+              <div id={open? 'open' : 'hidden'} className='navigation-links max-md:mt-6 max-md:h-full'>
                   <ul className='flex max-md:items-start items-center max-md:flex-col max-md:w-full'>
                   <Anchor
                       className='md:hover:text-purple-400 max-md:hover:bg-purple-900 max-md:w-screen max-md:py-4'

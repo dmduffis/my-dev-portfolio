@@ -31,10 +31,10 @@ function Skills() {
             <div>
                 <h2 className='skills-title mt-8 mb-2 text-left text-white'>Back-End</h2>
                 <ul className='text-lg text-gray-200 space-y-4'>
-                    <li className='flex gap-4 align-center'><img src={nodejs} width={28} height={28} />Node.js | Express.js</li>
-                    <li className='flex gap-4 align-center'><img src={mongodb} width={28} height={28} />MongoDB (noSQL)</li>
-                    <li className='flex gap-4 align-center'><img src={firebase} width={28} height={28} />FireBase (noSQL) </li>
-                    <li className='flex gap-4 align-center'><img src={hygraph} width={28} height={28} />Hygraph (GraphQL)</li>
+                    <li className='flex gap-4 align-center'><img src={nodejs} width={28} height={28} />Node | Express</li>
+                    <li className='flex gap-4 align-center'><img src={mongodb} width={28} height={28} />MongoDB</li>
+                    <li className='flex gap-4 align-center'><img src={firebase} width={28} height={28} />FireBase</li>
+                    <li className='flex gap-4 align-center'><img src={hygraph} width={28} height={28} />Hygraph</li>
                 </ul>
             </div>
             </div>

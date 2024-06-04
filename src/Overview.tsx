@@ -21,9 +21,9 @@ useEffect(() => window.scrollTo({
   return (
     <>
     <NavigationSingle />
-    <div className='w-2/3 mt-48'>
+    <div className='max-sm:w-full w-2/3 mt-48'>
       <h3 className='text-2xl text-purple-300'>Case Study</h3>
-      <h1 className='mt-4 text-6xl text-gray-100 font-light'>{item.title}</h1>
+      <h1 className='mt-4 max-sm:text-5xl text-6xl text-gray-100 font-light'>{item.title}</h1>
     </div>
     <div>
       <video className='mt-16 rounded-3xl' autoPlay loop muted playsInline>
@@ -31,7 +31,7 @@ useEffect(() => window.scrollTo({
       </video>
     </div>
     <div>
-      <h1 className='mt-16 text-4xl text-gray-100 font-light'><span className='text-purple-300'>Objective:</span> {item.objective}</h1>
+      <h1 className='mt-16 max-sm:text-2xl text-4xl text-gray-100 font-light'><span className='text-purple-300'>Objective:</span> {item.objective}</h1>
     </div>
 
     <div className='max-lg:mt-12 flex flex-wrap text-gray-100'>
@@ -74,7 +74,7 @@ useEffect(() => window.scrollTo({
       </div>
     </div>
 
-    <div className='max-lg:mt-12 flex flex-wrap text-gray-100'>
+    <div className='max-lg:mt-12 mb-16 flex flex-wrap text-gray-100'>
       <div className='flex flex-col justify-center items-left lg:w-1/3'>
       <p className='lg:m-2 text-left text-3xl font-base text-purple-300'>03</p>
         <p className='lg:m-2 text-5xl font-thin'>Deliver</p>
