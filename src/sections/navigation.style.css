@@ -31,5 +31,23 @@ nav {
 
 
 #max {
-    width: 1280px;
+    max-width: 1280px;
+}
+
+@media (max-width: 768px) {
+
+
+    #hidden {
+        display: none;
+        transition: all ease-in-out 0.3s;
+    }
+
+    #open {
+        display: 'flex';
+    }
+
+    .navigation-links ul {
+        gap: 5px;
+    }
+    
 }

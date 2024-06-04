@@ -26,7 +26,7 @@ useEffect(() => window.scrollTo({
       <h1 className='mt-4 text-6xl text-gray-100 font-light'>{item.title}</h1>
     </div>
     <div>
-      <video className='mt-16 rounded-3xl' autoPlay loop muted>
+      <video className='mt-16 rounded-3xl' autoPlay loop muted playsInline>
         <source src={item.animation} type='video/mp4' width={1440} height={700} />
       </video>
     </div>
