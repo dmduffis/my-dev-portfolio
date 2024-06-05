@@ -28,9 +28,9 @@ const form = useRef();
   return (
     <div className='contact_form_wrapper mt-12 mx-10 w-full'>
     <form ref={form} onSubmit={sendEmail} className='contact_form flex flex-col w-full'>
-        <input type="text" label="name" placeholder='Name' name='user_name' />
-        <input type="email" label="email" placeholder='Email' name='user_email'/>
-        <textarea label="message" placeholder='Message' name="message"></textarea>
+        <input type="text"  placeholder='Name' name='user_name' />
+        <input type="email" placeholder='Email' name='user_email'/>
+        <textarea placeholder='Message' name="message"></textarea>
         <input className='items-center' type="submit" value="Submit →"/>
     </form>
 </div>

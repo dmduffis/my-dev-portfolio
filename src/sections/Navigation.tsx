@@ -11,7 +11,7 @@ function Navigation() {
     if (location.hash) {
         let elem = document.getElementById(location.hash.slice(1))
         if (elem) {
-            elem.scrollIntoView({block: "start", behavior: "smooth", offset: 10})
+            elem.scrollIntoView({block: "start", behavior: "smooth"})
         }
     } else {
     window.scrollTo({top:0, left:0, behavior: "smooth"})
@@ -73,7 +73,7 @@ const [open, setOpen] = useState(false);
               <div className='md:hidden max-md:absolute max-md:right-8'>
                 <button onClick={() => setOpen(!open)}> 
                 { open ? 
-                <svg className='pt-1' version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" heigh="20px" viewBox="0 0 256 256" enable-background="new 0 0 256 256" xml:space="preserve">
+                <svg className='pt-1' version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 256 256" enable-background="new 0 0 256 256" xmlSpace="preserve">
                 <metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
                 <g><g><path fill="#fff" d="M15.6,20.4l3.7-3.7h-3.7l1.9,1.9l218.9,218.9l1.9,1.9v-3.7l-3.7,3.7h3.7l-1.9-1.9L17.4,18.6l-1.9-1.9V20.4L15.6,20.4z M11.9,16.7L10,18.6l1.9,1.9l1.9,1.9l218.9,218.9l1.9,1.9l1.9,1.9l1.9-1.9l3.7-3.7l1.9-1.9l-1.9-1.9l-1.9-1.9L21.2,14.8L19.3,13l-1.9-1.9L15.6,13L11.9,16.7L11.9,16.7z M236.7,16.7l3.7,3.7v-3.7l-1.9,1.9L19.7,237.4l-1.9,1.9h3.7l-3.7-3.7v3.7l1.9-1.9L238.6,18.6l1.9-1.9L236.7,16.7L236.7,16.7z M240.4,13l-1.9-1.9l-1.9,1.9l-1.9,1.9L15.9,233.7l-1.9,1.9l-1.9,1.9l1.9,1.9l3.7,3.7l1.9,1.9l1.9-1.9l1.9-1.9L242.3,22.3l1.9-1.9l1.9-1.9l-1.9-1.9L240.4,13L240.4,13z"/></g></g>
                 </svg>
