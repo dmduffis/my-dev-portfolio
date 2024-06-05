@@ -38,7 +38,7 @@ function Experience() {
         </button>
 
         <button className="flex items-center mx-1 py-2 px-4 rounded-full text-white  bg-gradient-to-r from-purple-600 to-blue-600 hover:shadow-xl transition-all ease-in ease-out">
-            <Link to="https://github.com/dmduffis/my-dev-portfolio/blob/6fac2f065bbe17a7f45ac4e0b6ba6f08e2596ddd/src/assets/documents/Daniel%20Duffis%20-%20Tech%20Resume%202024.pdf" target='_blank' className="mx-1">Resume</Link>
+            <Link to="https://www.dropbox.com/scl/fi/3bbju85jxah8vqj2t7pam/Daniel-Duffis-Tech-Resume-2024.pdf?rlkey=7rqf22gyj0i7fdiadojctdp5y&st=2nxmt71w&dl=0" target='_blank' className="mx-1">Resume</Link>
             <img src={downloadIcon} width={16} height={16} />
         </button>
         </div>
