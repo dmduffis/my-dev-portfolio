@@ -16,8 +16,12 @@ function Experience() {
             <p className='mt-1 text-lg font-light text-left text-gray-200'>2022-2023</p>
         </li>
         <li className='flex flex-wrap justify-between'>
-            <p className='flex flex-col mt-1 text-lg font-semibold text-left text-gray-200'><span>Graphic and Web Designer</span><span className='font-light text-base'>Mvizion Design Studio</span></p>
-            <p className='mt-1 text-lg font-light text-left text-gray-200'>2017-2022</p>
+            <p className='flex flex-col mt-1 text-lg font-semibold text-left text-gray-200'><span>Marketing Coordinator</span><span className='font-light text-base'>Mvizion Design Studio</span></p>
+            <p className='mt-1 text-lg font-light text-left text-gray-200'>2019-2022</p>
+        </li>
+        <li className='flex flex-wrap justify-between'>
+            <p className='flex flex-col mt-1 text-lg font-semibold text-left text-gray-200'><span>Freelance Graphic Designer</span><span className='font-light text-base'>Andrews University Press</span></p>
+            <p className='mt-1 text-lg font-light text-left text-gray-200'>2014-2019</p>
         </li>
         <li className='flex flex-wrap justify-between'>
             <p className='flex flex-col mt-1 text-lg font-semibold text-left text-gray-200'><span>Editorial and Design Assistant</span><span className='font-light text-base'>Andrews University Press</span></p>
