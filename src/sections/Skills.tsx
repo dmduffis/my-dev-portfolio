@@ -15,7 +15,7 @@ function Skills() {
           <div className='section-wrapper h-full'>
         <div className='p-10 bg-gray-900 rounded-3xl lg:mr-4 h-full'>
           <h2 className='section-title text-left text-white'>Front-End Developer</h2>
-          <h3 className='mt-2 text-lg text-left text-gray-400'>I combine over decade of experience in visual storytelling with software development. My proficiency lies in front-end development, complemented by a foundational understanding of back-end technologies.</h3>
+          <h3 className='mt-2 text-lg text-left text-gray-400'>I combine over decade of experience in visual storytelling with software development. My proficiency lies in front-end engineering, complemented by a foundational understanding of back-end technologies.</h3>
         
         {/* List of Skills */}
         <div className="flex flex-wrap w-full max-sm:justify-between sm:gap-24 max-md:justify-left md:gap-24 lg:justify-left lg:gap-10">
