@@ -64,7 +64,7 @@ const [open, setOpen] = useState(false);
                   <span className='max-md:ml-10'>Contact</span>
                   </Anchor>
                     <li className='max-md:hover:bg-purple-900 max-md:w-screen max-md:py-4'>
-                          <Link to="https://www.dropbox.com/scl/fi/qtkdunjjf4btloedir6qv/Daniel-Duffis-Tech-Resume-2024.pdf?rlkey=bqsjud5oxvd3sfbn11q46lp8b&st=v6p0blj0&dl=0" target='_blank' className="flex items-center md:mx-2 md:py-2 md:px-4 md:rounded-full text-white  md:bg-gradient-to-r from-purple-600 to-blue-600 transition-all ease-in ease-out">
+                          <Link to="https://www.dropbox.com/scl/fi/eh3g4bhfrs0wkx22y4zls/Daniel-Duffis-Bullet-Tech-Resume-2024.pdf?rlkey=j3rfsir92hme62n4p1bspogyz&st=d3ttr5ys&dl=0" target='_blank' className="flex items-center md:mx-2 md:py-2 md:px-4 md:rounded-full text-white  md:bg-gradient-to-r from-purple-600 to-blue-600 transition-all ease-in ease-out">
                           <span className="md:mx-2 max-md:mr-2 max-md:text-base max-md:ml-10">Resume</span> <img src={downloadIcon} width={18} height={18} />
                         </Link>
                     </li>
