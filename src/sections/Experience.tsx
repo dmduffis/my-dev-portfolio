@@ -12,8 +12,12 @@ function Experience() {
         {/* List of experiencies */}
         <ul className='flex flex-col mt-2 gap-y-6'>
         <li className='flex flex-wrap justify-between'>
+            <p className='flex flex-col mt-1 text-lg font-semibold text-left text-gray-200'><span>Software Engineer</span><span className='font-light text-base'>Vokality</span></p>
+            <p className='mt-1 text-lg font-light text-left text-gray-200'>2024-Present</p>
+        </li>
+        <li className='flex flex-wrap justify-between'>
             <p className='flex flex-col mt-1 text-lg font-semibold text-left text-gray-200'><span>Web Content Specialist</span><span className='font-light text-base'>William Carey International University</span></p>
-            <p className='mt-1 text-lg font-light text-left text-gray-200'>2022-2023</p>
+            <p className='mt-1 text-lg font-light text-left text-gray-200'>2022-2024</p>
         </li>
         <li className='flex flex-wrap justify-between'>
             <p className='flex flex-col mt-1 text-lg font-semibold text-left text-gray-200'><span>Marketing Coordinator</span><span className='font-light text-base'>Andrews University</span></p>
@@ -25,10 +29,6 @@ function Experience() {
         </li>
         <li className='flex flex-wrap justify-between'>
             <p className='flex flex-col mt-1 text-lg font-semibold text-left text-gray-200'><span>Editorial and Design Assistant</span><span className='font-light text-base'>Andrews University Press</span></p>
-            <p className='mt-1 text-lg font-light text-left text-gray-200'>2014-2016</p>
-        </li>
-        <li className='flex flex-wrap justify-between'>
-            <p className='flex flex-col mt-1 text-lg font-semibold text-left text-gray-200'><span>Graphic and Web Designer</span><span className='font-light text-base'>Andrews Alumni Services</span></p>
             <p className='mt-1 text-lg font-light text-left text-gray-200'>2014-2016</p>
         </li>
         </ul>
