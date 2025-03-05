@@ -1,11 +1,11 @@
 import { nanoid } from "nanoid";
 export const data = [
     {
-        title: 'Interactive U.S. Citenzship Practice Exam',
+        title: 'Interactive U.S. Citizenship Practice Exam',
         coverImg: 'https://res.cloudinary.com/dbob6dlo0/image/upload/v1717985162/quiz_cover_ffpz36.png',
         album: ['https://res.cloudinary.com/dbob6dlo0/image/upload/v1717986642/quiz_first_qndysf.png', 'https://res.cloudinary.com/dbob6dlo0/image/upload/v1717985162/quiz_responsive_yp3oev.png'],
         description: 'Quiz web app for latinos preparing for naturalization.',
-        git: 'https://github.com/dmduffis/app_ecommerce_fragrances',
+        git: 'https://github.com/dmduffis/examen-civica-eeuu',
         key: nanoid(),
         projectId: 1,
         animation: 'https://res.cloudinary.com/dbob6dlo0/video/upload/v1717984018/quiz_eeuu_z2og1l.mp4',
