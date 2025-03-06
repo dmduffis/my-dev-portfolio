@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
 import './contacform.style.css'
 import emailjs from '@emailjs/browser';
+import { BsArrowRightShort } from "react-icons/bs";
 
 
 function ContactForm() {
@@ -70,7 +71,7 @@ const form = useRef<HTMLFormElement>(null);
               Sending...
             </div>
           ) : (
-            isSubmitted ? <span className='text-base md:text-lg'>Sent!</span> : <span className='text-base md:text-lg'>Submit →</span>
+            isSubmitted ? <span className='text-base md:text-lg'>Sent!</span> : <div className='text-base md:text-lg flex items-center'><span>Submit</span> <BsArrowRightShort className='ml-1 w-6 h-6' width={40} height={40}/></div>
           )}
         </button>
     </form>
