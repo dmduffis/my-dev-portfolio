@@ -2,17 +2,20 @@ import React, { useRef, useState } from 'react';
 import './contacform.style.css'
 import emailjs from '@emailjs/browser';
 import { LiaLongArrowAltRightSolid } from "react-icons/lia"
+import { PiChecksLight } from "react-icons/pi";
 
 
 function ContactForm() {
-  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const [isError, setIsError] = useState(false);
 
-const form = useRef<HTMLFormElement>(null);
+  const form = useRef<HTMLFormElement>(null);
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsLoading(true);
+    setIsError(false);
     
     emailjs
       .sendForm('service_48ro6b7', 'template_t8qqnpt', form.current!, {
@@ -21,17 +24,21 @@ const form = useRef<HTMLFormElement>(null);
       .then(
         () => {
           console.log('SUCCESS!');
-          setIsSubmitted(true);
+          setIsSuccess(true);
           setIsLoading(false);
           form.current?.reset();
           setTimeout(() => {
-            setIsSubmitted(false);
+            setIsSuccess(false);
           }, 3000);
         },
         (error) => {
           console.log('FAILED...', error.text);
-          setIsSubmitted(false);
+          setIsSuccess(false);
           setIsLoading(false);
+          setIsError(true);
+          setTimeout(() => {
+            setIsError(false);
+          }, 3000);
         },
       );
   };
@@ -45,7 +52,8 @@ const form = useRef<HTMLFormElement>(null);
         <button 
           className={`flex items-center justify-center w-fit py-4 px-6 rounded-full ${
             isLoading ? 'bg-gray-400' : 
-            isSubmitted ? 'bg-green-600' : 
+            isSuccess ? 'bg-green-600' : 
+            isError ? 'bg-transparent border border-red-600' :
             'bg-gradient-to-r from-purple-600 to-blue-600 md:bg-gradient-none md:bg-none md:border md:border-gray-50  md:hover:border-black md:hover:bg-gradient-to-r md:hover:from-purple-600 md:hover:to-blue-600'
           } text-white hover:shadow-xl transition-all ease-in disabled:cursor-not-allowed`}
           type="submit"
@@ -70,8 +78,19 @@ const form = useRef<HTMLFormElement>(null);
               </svg>
               Sending...
             </div>
+          ) : isSuccess ? (
+            <div className='text-base md:text-lg flex items-center'>
+              Sent<PiChecksLight className='ml-2 w-6 h-6' width={40} height={40}/>
+            </div>
+          ) : isError ? (
+            <div className='text-base text-red-600 md:text-lg flex items-center'>
+             Oops! Try again...<span className='ml-2 text-sm'>❌</span>
+            </div>
           ) : (
-            isSubmitted ? <span className='text-base md:text-lg'>Sent!</span> : <div className='text-base md:text-lg flex items-center'><span>Submit</span> <LiaLongArrowAltRightSolid className='ml-2 w-6 h-6' width={40} height={40}/></div>
+            <div className='text-base md:text-lg flex items-center'>
+              <span>Submit</span> 
+              <LiaLongArrowAltRightSolid className='ml-2 w-6 h-6' width={40} height={40}/>
+            </div>
           )}
         </button>
     </form>
