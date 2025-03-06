@@ -38,9 +38,9 @@ const form = useRef<HTMLFormElement>(null);
   return (
     <div className='contact_form_wrapper mt-12 mx-10 w-full'>
     <form ref={form} onSubmit={handleSubmit} className='contact_form flex flex-col w-full'>
-        <input type="text"  placeholder='Name' name='user_name' />
-        <input type="email" placeholder='Email' name='user_email'/>
-        <textarea placeholder='Message' name="message"></textarea>
+        <input className="px-4" type="text"  placeholder='Name' name='user_name' />
+        <input className="px-4" type="email" placeholder='Email' name='user_email'/>
+        <textarea className="px-4" placeholder='Message' name="message"></textarea>
         <button 
           className={`flex items-center justify-center w-fit py-4 px-6 rounded-full ${
             isLoading ? 'bg-gray-400' : 
