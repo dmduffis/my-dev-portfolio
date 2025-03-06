@@ -50,7 +50,7 @@ function ContactForm() {
         <input className="px-4" type="email" placeholder='Email' name='user_email'/>
         <textarea className="px-4" placeholder='Message' name="message"></textarea>
         <button 
-          className={`flex items-center justify-center w-fit py-4 px-6 rounded-full ${
+          className={`flex items-center justify-center w-fit py-[10px] px-6 rounded-full ${
             isLoading ? 'bg-gray-400' : 
             isSuccess ? 'bg-green-600' : 
             isError ? 'bg-transparent border border-red-600' :
