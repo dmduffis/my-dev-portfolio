@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import './contacform.style.css'
 import emailjs from '@emailjs/browser';
-import { BsArrowRightShort } from "react-icons/bs";
+import { LiaLongArrowAltRightSolid } from "react-icons/lia"
 
 
 function ContactForm() {
@@ -46,7 +46,7 @@ const form = useRef<HTMLFormElement>(null);
           className={`flex items-center justify-center w-fit py-4 px-6 rounded-full ${
             isLoading ? 'bg-gray-400' : 
             isSubmitted ? 'bg-green-600' : 
-            'bg-gradient-to-r from-purple-600 to-blue-600'
+            'bg-gradient-to-r from-purple-600 to-blue-600 md:bg-gradient-none md:bg-none md:border md:border-gray-50  md:hover:border-black md:hover:bg-gradient-to-r md:hover:from-purple-600 md:hover:to-blue-600'
           } text-white hover:shadow-xl transition-all ease-in disabled:cursor-not-allowed`}
           type="submit"
           disabled={isLoading}
@@ -71,7 +71,7 @@ const form = useRef<HTMLFormElement>(null);
               Sending...
             </div>
           ) : (
-            isSubmitted ? <span className='text-base md:text-lg'>Sent!</span> : <div className='text-base md:text-lg flex items-center'><span>Submit</span> <BsArrowRightShort className='ml-1 w-6 h-6' width={40} height={40}/></div>
+            isSubmitted ? <span className='text-base md:text-lg'>Sent!</span> : <div className='text-base md:text-lg flex items-center'><span>Submit</span> <LiaLongArrowAltRightSolid className='ml-2 w-6 h-6' width={40} height={40}/></div>
           )}
         </button>
     </form>
